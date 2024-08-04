@@ -61,7 +61,6 @@
     --fs-200: 1.5rem;
 
     
-
   }
 
   body{
@@ -73,6 +72,58 @@
     font-family: var(--ff-secondary);
   }
 
+ p{
+   line-height: 2.5;
+ }
   .c-card{
-    
+    padding: 2.5rem;
+    border: 1px solid red;
+    color: var(--very-light-gray);
+
+  }
+
+   .c-card>*:not(:first-child, :last-child){
+    margin-bottom: 1.56rem
+   }
+
+  .c-card__icon{
+    margin-bottom: 2.18rem;
+
+  }
+
+  .c-card__title{
+    font-family: var(--ff-primary);
+    font-size: 2.5rem;
+  }
+
+  .c-button{
+    padding: 0.7rem 1.96rem 0.75rem;
+    border: none;
+    border-radius: 100vw;
+    background-color: var(--very-light-gray);
+    cursor:pointer;
+  }
+
+  .c-button--sedans{
+    color:var(--bright-orange);
+  }
+
+  .c-button--suvs{
+    color:var(--dark-cyan);
+  }
+
+  .c-button--luxury{
+    color:var(--very-dark-cyan);
+  }
+
+  .c-card--sedans{
+    background-color: var(--bright-orange);
+  }
+
+  .c-card--suvs{
+    background-color: var(--dark-cyan);
+  }
+
+  .c-card--luxury{
+    background-color: var(--very-dark-cyan);
   }
