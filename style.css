@@ -67,19 +67,32 @@
 
     display: grid;
     height: 100vh;
-
+  
     font-size: var(--fs-100);
     font-family: var(--ff-secondary);
   }
 
+  @media(min-width: 700px){
+    body{
+        place-content: center;
+    }
+  }
+
  p{
-   line-height: 2.5;
+   line-height: 2;
  }
   .c-card{
     padding: 2.5rem;
-    border: 1px solid red;
     color: var(--very-light-gray);
+    
+  }
 
+  @media(min-width: 700px){
+   .l-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 920px;
+   }
   }
 
    .c-card>*:not(:first-child, :last-child){
@@ -88,7 +101,6 @@
 
   .c-card__icon{
     margin-bottom: 2.18rem;
-
   }
 
   .c-card__title{
